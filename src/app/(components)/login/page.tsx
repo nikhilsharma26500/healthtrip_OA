@@ -2,8 +2,6 @@ import Image from 'next/image'
 import React from 'react'
 import { FcGoogle } from 'react-icons/fc'
 
-const googleLogo = ``
-
 const page = () => {
     return (
         <>
