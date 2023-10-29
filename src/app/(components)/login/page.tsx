@@ -13,7 +13,7 @@ const page = () => {
                         <h1 className='text-4xl m-10'>Login</h1>
                     </div>
                     <div className='flex justify-center'>
-                        <button className='flex justify-center items-center bg-gray-800 p-6 text-white rounded-2xl hover:px-8 hover:shadow-lg hover:shadow-black transform duration-200 active:bg-orange-900'>Sign in with <FcGoogle className="ml-2" /></button>
+                        <button className='flex justify-center items-center bg-gray-800 p-6 text-white rounded-full hover:px-10 hover:shadow-lg hover:shadow-black transform duration-200 active:bg-red-900'>Sign in with <FcGoogle className="ml-2" /></button>
                     </div>
                 </div>
             </div>
