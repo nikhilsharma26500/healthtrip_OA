@@ -10,7 +10,7 @@ const Page = () => {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    const response = await fetch('/api/tokens', {
+    const response = await fetch('/tokens', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

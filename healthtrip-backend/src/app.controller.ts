@@ -1,4 +1,4 @@
-import { Controller, Get, Req, UseGuards } from '@nestjs/common';
+import { Controller, Post, Get, Req, UseGuards, Body } from '@nestjs/common';
 import { AppService } from './app.service';
 import { AuthGuard } from '@nestjs/passport';
 
@@ -14,5 +14,14 @@ export class AppController {
   @UseGuards(AuthGuard('google'))
   googleAuthRedirect(@Req() req) {
     return this.appService.googleLogin(req);
+  }
+
+  // To be deleted later
+  @Post('tokens')
+  async saveTokens(
+    @Body() body: { telegramToken: string; weatherApiKey: string },
+  ) {
+    console.log(body.telegramToken, body.weatherApiKey);
+    return { message: 'Tokens saved' };
   }
 }
